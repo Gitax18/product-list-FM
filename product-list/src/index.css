@@ -31,6 +31,16 @@ body {
 main {
   display: flex;
   justify-content: center;
+  column-gap: 3rem;
+  width: max-content;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 1120px) {
+  main {
+    row-gap: 4rem;
+    flex-direction: column;
+  }
 }
 
 .heading {
@@ -160,4 +170,128 @@ main {
     justify-content: center;
     row-gap: 3rem;
   }
+}
+
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  background-color: #fff;
+  height: max-content;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.cartHeading {
+  color: var(--Red);
+}
+
+.emptyCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.emptyCart img {
+  height: auto;
+  width: 6rem;
+}
+
+.cart-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.li-end {
+  margin-top: 0.2rem;
+  background-color: var(--Rose-300);
+}
+
+.details {
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  column-gap: 5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4rem;
+}
+
+.details strong {
+  color: var(--Rose-900);
+}
+
+.quan-price {
+  display: flex;
+  column-gap: 8px;
+}
+
+.quan {
+  font-weight: 500;
+  color: var(--Red);
+  margin-right: 0.4rem;
+}
+
+.priceEach {
+  color: var(--Rose-300);
+}
+
+.priceWhole {
+  color: var(--Rose-500);
+  font-weight: 700;
+}
+
+.itemRemove {
+  background-color: transparent;
+  aspect-ratio: 1/1;
+  height: 1.2rem;
+  border: 1px solid var(--Rose-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  align-items: center;
+}
+
+.totalPrice strong {
+  font-size: 24px;
+  color: var(--Rose-900);
+}
+
+.carbon-neutral-msg {
+  display: flex;
+  background-color: var(--Rose-50);
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  gap: 0.4rem;
+}
+
+.carbon-neutral-msg strong {
+  color: var(--Rose-500);
+}
+
+.btn-confirm-order {
+  width: 100%;
+  height: 3rem;
+  border-radius: 50px;
+  border: none;
+  margin: 1rem 0;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--Rose-100);
+  background-color: var(--Red);
 }
